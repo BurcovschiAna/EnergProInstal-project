@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+html{
+    background-color: #FFF7F1;
+}
+html, label, input{
+    font-family: "Roboto Slab", serif;
+}
+html, body { 
+    max-width: 100%; 
+    overflow-x: hidden;
+ } 
+*{
+    margin: 0;
+    padding: 0;
+}
+.flexbox{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.hidden{
+    display: none;
+}
+.centrare{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.clasic-btn a{
+    text-decoration: none;
+    -webkit-text-decoration: none;
+    padding: 15px 20px;
+    background-color: #61677A;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #61677A;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.clasic-btn a:hover{
+    background-color: transparent;
+    border: 2px solid #61677A;
+    color: #61677A;
+}
+
+/* HEADER */
+.header{
+    padding: 10px 20px 20px; 
+}
+.nav{
+    width: 400px;
+}
+
+.nav a, .nav-tableta a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-text-decoration: none;
+    color: #61677A;
+}
+.nav a:hover, .nav-tableta a:hover, .second-menu-tableta a{
+    color: #222831;
+}
+.menu-li{
+    position: relative;
+}
+.second-menu {
+    position: absolute;
+    background-color: rgba(255, 247, 241, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    z-index: 10;
+    top: -1000vh;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    width: 230px;
+}
+.second-menu li, .nav-tableta li{
+    line-height: 40px;
+}
+#second-menu-echipamente{
+    left: -50px;
+}
+#second-menu-servicii{
+    left: -40px;
+}
+.menu-open{
+    top: 50px;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.nav-tableta{
+    text-align: right;
+    opacity: 0;
+    height: 0px;
+    padding-right: 5px;
+}
+.open-tableta{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    height: 100%;
+    opacity: 1;
+}
+.second-menu-tableta li{
+    padding-right: 20px;
+}
+/* FORM */
+.formular{
+    background-color: #76a21ecd;
+    padding: 30px 20px;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 20px 0 30px;
+}
+form{
+    width: 500px;
+}
+.box-formular:nth-child(2n), .box-formular:nth-child(4n){
+    float: right;
+}
+.box-formular{
+    position: relative;
+    display: inline-block;
+}
+.box-formular input, .box-formular input:valid{
+    border: none;
+    border-bottom: 1px solid #61677A;
+    background: transparent;
+    margin: 20px 0;
+    outline: none;
+    width: 200px;
+    font-size: 18px;
+}
+.box-formular label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.box-formular input:focus ~ label, .box-formular input:valid ~ label  {
+    top: -20px;
+    font-size: 16px;
+    color: #FFF7F1;
+}
+.box-formular input:valid, .box-formular input:focus{
+    border-bottom: 1px solid #FFF7F1;
+}
+.box-formular input:focus + input:invalid{
+    background: red;
+}
+.box-formular:nth-child(5n){
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    font-size: 18px;
+    background: transparent;
+    outline: none;
+   border: 1px solid #61677A;
+}
+textarea::placeholder{
+    font-size: 20px;
+}
+.btn-form{
+    outline: none;
+    padding: 15px 20px;
+    background-color: #61677A;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 2px solid #61677A;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    display: block;
+    margin: 10px auto 0;
+}
+.btn-form:hover{
+    background-color: transparent;
+    border: 2px solid #61677A;
+    color: #61677A;
+}
+.text-formular{
+    color: #FFF7F1;
+    max-width: 400px;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+/* FOOTER */
+.footer{
+    background-color: #61677A;
+    width: 100%;
+}
+.footer > div{
+    padding: 20px;
+}
+
+.footer a, .footer li{
+    color: #FFF7F1;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-text-decoration: none;
+}
+.footer li{
+    padding: 5px 0;
+    text-align: center;
+}
+.copyright{
+    font-size: 15px;
+    text-align: center;
+    color: #FFF7F1;
+    padding-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+    form{
+        width: 420px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .formular{
+        display: block;
+    }
+    form, .text-formular{
+        margin: 0 auto;
+    }
+    .text-formular{
+        padding-top: 40px;
+    }
+}
+@media screen and (min-width: 699px) {
+    .nav-tableta, .burger-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo img {
+        width: 90%;
+    }
+    .nav{
+        display: none;
+    }
+    .burger-menu{
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+    .hamburger > div{
+        background-color: #61677A;
+        width: 100%;
+        height: 2px;
+        margin: 7px 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        font-size: 0px;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        position: relative;
+    }
+    #toggle {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: none;
+    }
+   #toggle:checked + .hamburger .top-bun{
+    margin-top: 17px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+   }
+   #toggle:checked + .hamburger .meat{
+    opacity: 0;
+   }
+   #toggle:checked + .hamburger .bottom-bun{
+    margin-top: -18px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+   }
+}
+
+@media screen and (max-width: 600px) {
+    .logo img {
+        width: 70%;
+    }
+    .logo-footer img{
+        width: 50%;
+    }
+    .footer .flexbox{
+        display: block;
+    }
+    .footer a, .footer li {
+        font-size: 15px;
+    }
+    .copyright {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 500px) {
+    form{
+        width: 100%;
+    }
+    .box-formular, .box-formular:nth-child(2n), .box-formular:nth-child(4n){
+        float: initial;
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .box-formular input, .box-formular input:valid{
+      width: 100%;
+    }
+    .btn-form, .text-formular, textarea::placeholder, textarea, .box-formular label, .box-formular input, .box-formular input:valid{
+        font-size: 16px;
+    }
+    .btn-form {
+        padding: 10px 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .logo img{
+        width: 60%;
+    }
+    .nav-tableta a{
+        font-size: 15px;
+    }
+}
+.harta iframe{
+    width: 100%;
+}

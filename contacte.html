@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EnergProInstal</title>
+    <link rel="icon" type="image/svg+xml" sizes="30x30" href="./svg/logo.svg">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="header centrare">
+        <ul class="flexbox">
+            <li>
+                <a href="index.html" class="logo">
+                    <img src="./svg/logo.svg">
+                </a>
+            </li>
+            <li>
+                <div class="nav">
+                    <ul class="flexbox">
+                        <li class="menu-li" id="li-echipamente"><a href="#">
+                            Echipamente
+                            <div class="second-menu" id="second-menu-echipamente">
+                                <ul>
+                                    <li><a href="https://www.wolf.eu/en-de">
+                                        Sisteme de încălzire
+                                    </a></li>
+                                    <li><a href="https://www.maico-ventilatoren.com/">
+                                        Ventilare cu recuperare
+                                    </a></li>
+                                    <li><a href="https://www.daikin.eu/">
+                                        Sisteme de condiționare
+                                    </a></li>
+                                    <li><a href="https://www.herz.eu/">
+                                        Apă și canalizare
+                                    </a></li>
+                                    <li><a href="https://www.aertecnica.com/">
+                                        Aspirator centralizat
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </a></li>
+                        <li class="menu-li" id="li-servicii"><a href="#">
+                            Servicii
+                            <div class="second-menu" id="second-menu-servicii">
+                                <ul>
+                                    <li><a href="#">
+                                        Proiectare
+                                    </a></li>
+                                    <li><a href="#">
+                                        Instalare și montare
+                                    </a></li>
+                                    <li><a href="#">
+                                        Mentenanță
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </a></li>
+                        <li><a href="contacte.html">
+                            Contacte
+                        </a></li>
+                    </ul>
+                </div>
+            </li>
+            <div class="burger-menu">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="hamburger" id="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+            </div>
+        </ul>
+        <div class="nav-tableta" id="nav-tableta">
+            <ul>
+                <li class="menu-li" id="li-echipamente-tableta"><a href="#">
+                    Echipamente
+                    <div class="second-menu-tableta hidden" id="second-menu-echipamente-tableta">
+                        <ul>
+                            <li><a href="https://www.wolf.eu/en-de">
+                                Sisteme de încălzire
+                            </a></li>
+                            <li><a href="https://www.maico-ventilatoren.com/">
+                                Ventilare cu recuperare
+                            </a></li>
+                            <li><a href="https://www.daikin.eu/">
+                                Sisteme de condiționare
+                            </a></li>
+                            <li><a href="https://www.herz.eu/">
+                                Apă și canalizare
+                            </a></li>
+                            <li><a href="https://www.aertecnica.com/">
+                                Aspirator centralizat
+                            </a></li>
+                        </ul>
+                    </div>
+                </a></li>
+                <li class="menu-li" id="li-servicii-tableta"><a href="#">
+                    Servicii
+                    <div class="second-menu-tableta hidden" id="second-menu-servicii-tableta">
+                        <ul>
+                            <li><a href="#">
+                                Proiectare
+                            </a></li>
+                            <li><a href="#">
+                                Instalare și montare
+                            </a></li>
+                            <li><a href="#">
+                                Mentenanță
+                            </a></li>
+                        </ul>
+                    </div>
+                </a></li>
+                <li><a href="contacte.html">
+                    Contacte
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="centrare">
+        <div class="formular" id="formular">
+            <div>
+                <form>
+                    <div class="box-formular">
+                        <input id="nume" type="text" required> 
+                        <label for="nume">Nume</label>
+                    </div>
+                    <div class="box-formular">
+                        <input id="prenume" type="text" required> 
+                        <label for="prenume"> Prenume</label>
+                    </div>
+                    <div class="box-formular">
+                        <input type="text" id="telefon" required> 
+                         <label for="telefon">Numărul de telefon</label>
+                    </div>
+                    <div class="box-formular">
+                        <input id="e-mail" type="email" required>
+                         <label for="e-mail">E-mail</label>
+                    </div>
+                    <div class="box-formular">
+                        <textarea id="mesaj" placeholder="Mesajul tău"></textarea>
+                    </div>
+                    <input type="submit" value="Trimite" id="btn" class="clasic-btn btn-form">
+                </form>
+            </div>
+            <div class="text-formular">
+                Pentru mai multă informație completează formularul și te contactăm în cel mai scurt timp
+            </div>
+        </div>
+        <div class="harta">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680.0864225904146!2d28.830387469628764!3d47.013819112591115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d87a9335495%3A0x5e9e50fe05d91690!2sStrada%20Alexandru%20Bernardazzi%2041%2C%20Chi%C8%99in%C4%83u%2C%20Moldova!5e0!3m2!1sro!2s!4v1717078133031!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+    </div>
+    
+ 
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="centrare ">
+            <ul class="flexbox">
+                <li>
+                    <ul>
+                        <li class="logo-footer">
+                            <img src="svg/logo-footer.svg">
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="despre.html">
+                                Despre noi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contacte.html">
+                                Contacte
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:energproinstal@gmail.com">
+                                E-mail: energproinstal@gmail.com
+                            </a>
+                        </li>
+                        <li> Tel.: (373)
+                            <a href="tel:+373 60656444">
+                                60656444
+                            </a>, 
+                            <a href="tel:+373 69032100">
+                                069032100
+                            </a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="copyright">
+                © EnergProInstal 2024 Toate drepturile rezervate. </a>
+           </div>
+        </div>
+    </div>
+    <script src="./js/scrips.js"></script>
+    <script src="js/email.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "7uevuzgx8Zwr11ct9",
+        });
+    })();
+    </script>
+</body>
+</html>
