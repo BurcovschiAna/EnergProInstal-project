@@ -9,12 +9,7 @@
 
 ###
 
-<p align="left">Hello World!!</p>
-
-###
-
-<div align="center">
-  <img height="200" src="https://energproinstal.md/index.html"  />
-</div>
+<p align="left">The purpose of this website is to promote the company's services and provide a easy method for users to contact the company's employees.</p>
+<p align="left">Here is a link to the website <a href="https://energproinstal.md/index.html">EnergProInstal</a></p>
 
 ###
